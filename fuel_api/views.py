@@ -94,7 +94,7 @@ def route_with_fuel_stops(request):
     # fuel_stops_list, overall_fuel_cost = compute_fuel_stops_and_cost(fuel_data)
 
     return Response({
-        # 'route': route_data,
+        'route': route_data,
         'fuel_stops': fuel_stops_list,
         'total_cost': overall_fuel_cost
     })
